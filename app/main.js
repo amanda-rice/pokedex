@@ -1,7 +1,10 @@
-import ValuesController from "./Controllers/ValuesController.js";
+import MyPokesController from "./Controllers/MyPokesController.js";
+import ApiPokesController from "./Controllers/ApiPokesController.js";
+
 
 class App {
-  valuesController = new ValuesController();
+  apiPokesController = new ApiPokesController()
+  myPokesController = new MyPokesController()
 }
 
 window["app"] = new App();

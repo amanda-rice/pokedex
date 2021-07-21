@@ -17,19 +17,29 @@
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">pokedex</span>
+                <span class="ml-2">Pokedex</span>
             </a>
         </nav>
     </header>
-    <main class="container">
-        <div id="app"></div>
+    <main class="container-flex bg-dark">
+        <div class="d-flex">
+            <div class="">
+                <div class="bg-light p-4 m-4 first-two flex-fill" id="api-pokes"></div>
+                <div class="bg-light p-4 m-4 first-two flex-fill" id="my-pokemon"></div>
+            </div>
+            <div class="bg-light p-4 m-4 selected-poke-col flex-fill align-items-center justify-content-center"
+                id="selected-poke">
+            </div>
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
             <p><small>Made with love by Codeworks</small></p>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 
