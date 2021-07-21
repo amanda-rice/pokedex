@@ -13,7 +13,7 @@ export default class Poke {
   }
   get Template() {
     return `
-      <div class="bg-light m-3 p-3 shadow">
+      <div class="bg-light m-3 p-3">
         <div>
           <img class="p-2" src="${this.img}" alt="${this.name} Picture">
         </div>
@@ -42,7 +42,7 @@ export default class Poke {
   }
   get drawButtons() {
     if (this.isMyPokemon) {
-      return `<button type="button" class="btn btn-danger" onclick="app.myPokesController.removePokemon()">Remove Pokemon</button>`
+      return `<button type="button" class="btn btn-secondary" onclick="app.myPokesController.removePokemon()">Remove Pokemon</button>`
     }
     return `<button type="button" class="btn btn-warning" onclick="app.myPokesController.addPokemon()">Add Pokemon</button>`
   }
